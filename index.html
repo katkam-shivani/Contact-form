@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Form</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; background-color:antiquewhite;}
+   
+    .error { color: red; }
+    input, textarea { display: block; margin-bottom: 10px; width: 50%; padding: 8px; }
+    button {
+     padding: 10px 20px;
+     background-color: aqua;
+     border-radius: 10px;
+      }
+  </style>
+</head>
+<body>
+
+  <h2>CONTACT FORM</h2>
+  <form id="contactForm">
+    <label>
+      Name:
+      <input type="text" id="name" name="name" required />
+      <span class="error" id="nameError"></span>
+    </label>
+
+    <label>
+      Email:
+      <input type="email" id="email" name="email" required />
+      <span class="error" id="emailError"></span>
+    </label>
+
+    <label>
+      Message:
+      <textarea id="message" name="message" rows="5" required></textarea>
+      <span class="error" id="messageError"></span>
+    </label>
+
+    <button type="submit">Send</button>
+  </form>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
